@@ -50,20 +50,20 @@ def renomear_arquivo_e_mover(destino,pasta_downloads):
 def login(link_do_site):
     driver.get(link_do_site)
     time.sleep(3)
-    driver.find_element(By.NAME, "tenant_id").clear() #Limpa o campo de preenchimento do email
+    driver.find_element(By.NAME, "tenant_id").clear() #Limpa o campo de preenchimento
     driver.find_element(By.NAME, "tenant_id").send_keys("Telefonica" )
-    driver.find_element(By.CLASS_NAME,"button").click() #procura o elemento do menu
+    driver.find_element(By.CLASS_NAME,"button").click() #Clica no botão para envio
     time.sleep(1)
 
 
-    driver.find_element(By.ID, "userIdentifier").clear() #Limpa o campo de preenchimento do email
+    driver.find_element(By.ID, "userIdentifier").clear() #Limpa o campo de preenchimento
     driver.find_element(By.ID, "userIdentifier").send_keys("*********" )
-    driver.find_element(By.ID,"submitButton").click() #procura o elemento do menu
+    driver.find_element(By.ID,"submitButton").click() #Clica no botão para envio
     time.sleep(1)
 
-    driver.find_element(By.ID, "password").clear() #Limpa o campo de preenchimento do email
+    driver.find_element(By.ID, "password").clear() #Limpa o campo de preenchimento 
     driver.find_element(By.ID, "password").send_keys("*********")
-    driver.find_element(By.ID,"submitButton").click() #procura o elemento do menu
+    driver.find_element(By.ID,"submitButton").click() #Clica no botão para envio
     time.sleep(13)
 
 
