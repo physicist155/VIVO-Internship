@@ -1,4 +1,3 @@
-
 import time #Biblioteca para fazer pausas temporais
 
 import pandas as pd #Biblioteca para manipular planilhas
